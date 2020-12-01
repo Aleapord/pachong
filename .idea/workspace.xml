@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a19e2688-43da-41fa-bf7d-15f0d6c10da9" name="Default Changelist" comment="change th_num">
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="a19e2688-43da-41fa-bf7d-15f0d6c10da9" name="Default Changelist" comment="change th_num" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,10 +186,10 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="561" y="143" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1606706664695" />
-    <state x="647" y="260" key="Vcs.Push.Dialog.v2" timestamp="1606806592838">
+    <state x="647" y="260" key="Vcs.Push.Dialog.v2" timestamp="1606807021544">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="647" y="260" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1606806592838" />
+    <state x="647" y="260" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1606807021544" />
     <state x="883" y="261" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606804624753">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
