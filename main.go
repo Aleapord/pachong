@@ -62,7 +62,7 @@ func gen_urls(url string, size int) []string {
 }
 func paqu(url string, size int, path string) {
 	image_links := gen_urls(url, size)
-	var t_num = 32
+	var t_num = 24
 	url_chan := make(chan string, size)
 	//进程退出标志管道
 	exit_chan := make(chan bool, t_num)
