@@ -62,9 +62,10 @@ func gen_urls(url string, size int) []string {
 }
 func paqu(url string, size int, path string) {
 	image_links := gen_urls(url, size)
+	var t_num = 16
 	url_chan := make(chan string, size)
 	//进程退出标志管道
-	exit_chan := make(chan bool, 12)
+	exit_chan := make(chan bool, t_num)
 	//为本美女创建一个文件夹
 	_ = os.Mkdir("./image/"+path, 0755)
 	wg.Add(1)
@@ -75,8 +76,8 @@ func paqu(url string, size int, path string) {
 		close(url_chan)
 		wg.Done()
 	}()
-	wg.Add(12)
-	for i := 0; i < 12; i++ {
+	wg.Add(t_num)
+	for i := 0; i < t_num; i++ {
 		go func() {
 			for i := range url_chan {
 				save_image(path+"/", get_body(i))
@@ -87,7 +88,7 @@ func paqu(url string, size int, path string) {
 	}
 	wg.Add(1)
 	go func() {
-		for i := 0; i < 12; i++ {
+		for i := 0; i < t_num; i++ {
 			<-exit_chan
 		}
 		close(exit_chan)
